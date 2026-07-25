@@ -179,7 +179,7 @@ def predict():
         for index, class_name in enumerate(class_names)
     }
 
-    CONFIDENCE_THRESHOLD = 0.70
+    CONFIDENCE_THRESHOLD = 0.6
     if confidence < CONFIDENCE_THRESHOLD:
         return jsonify({
             "predicted_class": "Invalid Sample",
